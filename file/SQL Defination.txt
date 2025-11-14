@@ -1,0 +1,107 @@
+SQL Defination :
+SQL or Structured Query Language, is a domain-specific programming language
+designed for managing and manipulation data in relational database management systems(RDBMS). It is the standard language used to interact with structured data stored in tables, rows and columns representing different data attributes.
+Types Of Data Storage
+
+1. JSON Storage
+(JavaScript Object Notation)
+It stores data inhierarchical, nested, key-value format.
+It is commomnly used in wed APIs NoSQL databases, and config files.
+
+2. Tabular Storage
+Tabular data is stored in tables with rows and columns, like in relational databases (SQL).
+
+3. DBMS
+A Database Management System (DBMS) is a software system for creating, managing, and interacting with databases. It acts as an interface between users and databases, allowing for the efficient storage, retrieval, updating, and deletion of data while ensuring security, data integrity, and consistency. Common examples include MySQL, PostgreSQL, and Microsoft SQL Server.
+
+4. RDBMS
+RDBMS stands for Relational Database Management System.
+It is a software system used for storing, managing, and retrieving data organized into a structured format using tables, rows, and columns [1]. The core principle of an RDBMS is the use of relationships between these tables, which are established using unique identifiers called keys (primary and foreign keys) 
+
+
+1. Create the table:
+
+CREATE TABLE personal_info (
+    Name varchar(100),
+    Age int,
+    location varchar(100)
+);
+
+2. Insert the data:
+
+INSERT INTO personal_info (Name, Age, location)
+VALUES ('karan', 19, 'gurugram'),
+       ('varsha', 17, 'jhajjar');
+
+
+3. Select (query) the data:
+
+SELECT * FROM personal_info;
+
+{OUTPUT}
+
+
+1.creating table
+CREATE TABLE EMPLOYEE (
+
+empId INTEGER PRIMARY KEY,
+
+name TEXT NOT NULL,
+
+dept TEXT NOT NULL
+
+);
+
+2.inserting in table
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+
+3. Select (query) the data:
+
+SELECT * FROM EMPLOYEE;
+
+SELECT FORM EMPLOYEE where empid > 0001
+
+4.updating in table
+Update EMPLOYEE set name='rachit' where empId=2;
+
+SELECT * FROM EMPLOYEE;
+
+5. Deleting from table'
+delete from EMPLOYEE where empId = 2;
+SELECT * FROM EMPLOYEE;
+
+DDL (data definition language)
+To change the structure of data.
+1.create
+2.ALTER - to change in the existing table
+3.DROP - remove the DR
+4.truncate - remove the table
+
+DML (data manipulating language)
+To change the data.
+1.select- The SELECT statement in SQL is a fundamental command used to retrieve data from one or more tables in a relational database
+
+2.update- The UPDATE statement in SQL is used to modify existing records in a database table. It allows you to change the values of one or more columns for specific rows or all rows in a table. 
+
+3.insert- To insert data into a table in SQL, the INSERT INTO statement is used. This statement allows for adding new rows of records to an existing table.
+
+4.delete- To insert data into a table in SQL, the INSERT INTO statement is used. This statement allows for adding new rows of records to an existing table.
+
+SELECT * from EMPLOYEE where empId >=0.002 and empId <=0.005;
+SELECT * from EMPLOYEE where NOT dept = "Teacher";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

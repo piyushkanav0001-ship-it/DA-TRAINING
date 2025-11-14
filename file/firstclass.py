@@ -1,0 +1,2 @@
+x="karan"
+print(x)
